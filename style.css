@@ -502,6 +502,7 @@ body {
   .img5 {
     width: 100% !important;
     height: auto !important;
+    margin-top: 5px !important;
   }
 }
 
