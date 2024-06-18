@@ -9,6 +9,13 @@
     <!-- Google Fonts Link For Icons -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- arrow up icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <!-- cart icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -36,10 +43,12 @@
                 <li><a href="https://kovacseduard.github.io/WaterService/">O nás</a></li>
                 <li><a href="https://kovacseduard.github.io/WaterService_upravavody/">Úprava vody</a>
                 </li>
-                <li><a id="selectedmenu"  href="https://kovacseduard.github.io/WaterService_cerpaciesystemy/">Cerpacie systémy</a></li>
+                <li><a id="selectedmenu" href="">Cerpacie systémy</a></li>
+                <li><a href="">Reverzné osmózy</a></li>
                 <li><a href="">Instalacie</a></li>
                 <li><a href="">Bazénová technologia</a></li>
                 <li><a href="">Hydreologia</a></li>
+                <li id="cart"><a href="https://www.pumpakysuce.sk/" target="_blank" class="fa-solid fa-cart-shopping" id="shopping-cart"></a></li>
             </ul>
         </nav>
     </header>
@@ -120,7 +129,7 @@
             <img class="imgpump img5" src="photos/pumps5.jpg" alt="img-5" />
         </div>
 
-        
+
         <p class="hp3">Vertikálne čerpadlá sú vhodné na čerpanie čistej vody, na čerpanie vody zo zásobníkov a nádrží,
             využitie majú pre automatické tlakové stanice pre dodávku vody a zvyšovanie tlaku.
         </p>
@@ -133,10 +142,6 @@
         </div>
 
     </section>
-
-
-
-
 
     <footer id="footer1">
 
@@ -168,6 +173,10 @@
 
     </footer>
 
+    <button class="material-symbols-outlined" id="page-up" href="">
+        keyboard_arrow_up
+    </button>
+
 
     <!-- header -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -178,6 +187,36 @@
             })
         })
     </script>
+
+
+    <!-- scroll-up -->
+
+    <script>
+        const goToTopButton = document.getElementById("page-up");
+
+        window.onscroll = () => {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
+                goToTopButton.style.display = "block";
+            } else {
+                goToTopButton.style.display = "none";
+            }
+        }
+        goToTopButton.addEventListener("click", () => {
+            goToTopButton.style.display = "none";
+            window.scroll({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+    </script>
+
 
     <!-- photo slider1 -->
     <script>
@@ -242,7 +281,7 @@
         window.addEventListener("resize", initSlider);
         window.addEventListener("load", initSlider);
     </script>
-   
+
 
 </body>
 
