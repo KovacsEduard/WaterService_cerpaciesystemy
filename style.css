@@ -1,7 +1,8 @@
 * {
   color: white;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif !important;
 }
+
 
 /* header */
 
@@ -14,7 +15,6 @@
     float: right;
   }
 }
-
 
 nav {
   width: 100%;
@@ -149,7 +149,6 @@ header {
 }
 
 
-
 /* paralax */
 
 body {
@@ -161,7 +160,6 @@ body {
   width: 90%;
   padding-left: 5%;
 }
-
 
 
 /* footer */
@@ -296,7 +294,6 @@ body {
 }
 
 
-
 /* section 1 */
 
 .hp {
@@ -333,7 +330,6 @@ body {
   font-size: 16px;
   padding: 20px 10px;
 }
-
 
 
 /* photo slider  */
@@ -472,7 +468,6 @@ body {
 }
 
 
-
 /* images2 */
 
 @media only screen and (max-width: 600px) {
@@ -538,7 +533,6 @@ body {
     margin-top: 5px !important;
   }
 }
-
 
 @media only screen and (min-width: 992px) {
   .img5 {
@@ -616,7 +610,6 @@ body {
 
 
 /* images3 */
-
 
 @media only screen and (min-width:600px){
   .img6{
